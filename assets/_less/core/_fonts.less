@@ -1,0 +1,186 @@
+// Display Font - Open Sans
+// --------------------------------------------------------------------------
+
+.font-import(aspirademi);
+.font-import(aspirademo);
+.font-import(aspirathin);
+
+.font-import(copernicus-book);
+.font-import(copernicus-bookitalic);
+.font-import(copernicus-semibold);
+
+
+
+.font-text {
+    font-family: 'copernicus-book';
+}
+.font-text-italic, em {
+    font-family: 'copernicus-bookitalic';
+    font-style: normal;
+}
+.font-text-bold, strong, b {
+    font-family: 'copernicus-semibold';
+}
+
+.font-display {
+    font-family: 'aspirathin';
+}
+
+.font-display-semibold {
+    font-family: 'aspirademo';
+}
+
+.font-display-bold {
+    font-family: 'aspirademi';
+}
+
+.color-grey {
+    color: @color-grey !important;
+}
+
+.color-blue {
+    color: @color1 !important;
+}
+
+.color-green {
+    color: @color2 !important;
+}
+
+.color-yellow {
+    color: @color3 !important;
+}
+
+.color-red {
+    color: @color-red !important;
+}
+
+.small {
+    font-size: 50%;
+}
+
+a.small {
+    color: @color1;
+    &:hover {
+        color: @color-black--light;
+    }
+}
+
+// Font Sizes (13px 16px 19px 26px 42px 48px 68px 78px 110px;)
+// --------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6, p {
+    .font-display;
+    line-height: 150%;
+    padding-top: 0.5em !important;
+}
+
+h1, a h1 {
+    #pxtoem > .font-size( 68 );
+}
+h2, a h2 {
+    #pxtoem > .font-size( 48 );
+}
+h3, a h3 {
+    #pxtoem > .font-size( 42 );
+}
+h4, a h4 {
+    #pxtoem > .font-size( 26 );
+}
+h5, a h5 {
+    #pxtoem > .font-size( 19 );
+    line-height: 175%;
+    text-transform: uppercase;
+    .font-display-bold;
+    span {
+        text-transform: none;
+        .font-display;
+        margin-left: 0.45em;
+        .color-grey;
+    }
+}
+h6, a h6 {
+    #pxtoem > .font-size( 19 );
+    line-height: 175%;
+}
+
+p, ul, ol {
+    .font-text;
+    #pxtoem > .font-size( 16 );
+    line-height: 200%;
+    color: @color-black--light;
+}
+
+
+// Icons - iconography font
+// --------------------------------------------------------------------------
+
+.font-import('icomoon');
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e600";
+}
+.icon-checkmark:before {
+    content: "\e601";
+}
+.icon-google:before {
+    content: "\e602";
+}
+.icon-facebook:before {
+    content: "\e603";
+}
+.icon-twitter:before {
+    content: "\e604";
+}
+.icon-github:before {
+    content: "\e605";
+}
+.icon-pinterest:before {
+    content: "\e606";
+}
+.icon-linkedin:before {
+    content: "\e612";
+}
+.icon-cross:before {
+    content: "\e613";
+}
+.icon-arrow-left:before {
+    content: "\e607";
+}
+.icon-arrow-down:before {
+    content: "\e608";
+}
+.icon-arrow-up:before {
+    content: "\e609";
+}
+.icon-arrow-right:before {
+    content: "\e60a";
+}
+.icon-arrow-left2:before {
+    content: "\e60b";
+}
+.icon-arrow-down2:before {
+    content: "\e60c";
+}
+.icon-arrow-up2:before {
+    content: "\e60d";
+}
+.icon-arrow-right2:before {
+    content: "\e60e";
+}
+.icon-instagram:before {
+    content: "\e60f";
+}

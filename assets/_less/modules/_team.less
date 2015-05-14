@@ -1,0 +1,92 @@
+// Photo Colour Schreme
+// --------------------------------------------------------------------------
+
+#team {
+    text-align: center;
+    position: relative;
+    
+    h1 {
+        text-align: left;
+    }
+    h3 {
+        font-weight: 300 !important;
+        padding-bottom: 0 !important;
+    }
+    h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-bottom: 0 !important;
+        color: @color-red;
+    }
+    h5 {
+        color: @color-grey;
+        font-size: 80%;
+    }
+    p {
+        text-align: left;
+    }
+    img {
+        .radius(100%);
+        border: 0.5rem solid @color-white--dark;
+        width: 11.25rem;
+        height: 11.25rem;
+        .transition;
+    }
+    .team-grid {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 2rem;
+        list-style: none;
+        text-align: center;
+        display: block;
+        &::after {
+            .clearfix;
+        }
+        li {
+            float: left;
+            vertical-align: top;
+            display: block;
+            padding: 1rem 0 1rem 0;
+            margin: 0;
+            .radius(0.25rem);
+            .transition;
+            &:hover {
+                background: @color-white;
+                img {
+                    border-color: darken(@color-white--dark,10%);
+                }
+            }
+        }
+    }
+    footer {
+        border-bottom: none !important;
+    }
+}
+
+#team-profile {
+    background: no-repeat top center;
+    .background-size;
+    color: @color-white--light;
+    min-height: 250px;
+
+    figcaption {
+        padding: 7rem 1rem 2rem;
+        h1,h2,h3,h4,h5,h6 {
+            padding: 0.25rem 0 !important;
+            margin: 0 !important;
+            line-height: 120%;
+            text-shadow: 0 0 4px @color-black--dark;
+        }
+        ul.social {
+            font-size: 120%;
+            text-align: left;
+        }
+    }
+}
+
+.team-bio {
+    padding: 3rem 1rem;
+}
+
+
