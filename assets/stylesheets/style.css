@@ -544,7 +544,9 @@ a {
 }
 p a,
 ul a {
-  color: #6fc3de;
+  color: #3d3e3e;
+  font-family: 'copernicus-semibold';
+  text-decoration: underline;
 }
 p.caption {
   font-size: 1.1875em;
@@ -558,6 +560,9 @@ ul {
 #content ul.leads {
   margin-left: 0;
   list-style: none;
+}
+#content ul.leads a {
+  text-decoration: none;
 }
 #content ul.leads li {
   margin-top: 1em;
